@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.collections.*?>
+<?import fxmltableview.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StudentViewController">
+   <children>
+      <TableView fx:id="student" layoutY="100.0" prefHeight="200.0" prefWidth="387.0">
+			<columns>
+				<TableColumn prefWidth="195.0" text="Student ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="0.0" prefWidth="191.0" text="Student Name">
+					<cellValueFactory>
+						<PropertyValueFactory property="name" />
+					</cellValueFactory>
+				</TableColumn>
+				</columns>
+		</TableView>
+      <TextField fx:id="name" layoutX="194.0" layoutY="368.0" />
+      <TextField fx:id="password" layoutX="194.0" layoutY="438.0" />
+      <Label layoutX="42.0" layoutY="368.0" prefHeight="25.0" prefWidth="101.0" text="Student_Name" />
+      <Label layoutX="42.0" layoutY="438.0" prefHeight="25.0" prefWidth="101.0" text="Student_Password" />
+      <Label layoutX="91.0" layoutY="46.0" prefHeight="17.0" prefWidth="197.0" text="          Student Details Update" textFill="#3a756c" />
+      <Button layoutX="245.0" layoutY="495.0" mnemonicParsing="false" onAction="#updateStudent" prefHeight="25.0" prefWidth="72.0" text="Update" />
+      <Button layoutX="79.0" layoutY="495.0" mnemonicParsing="false" onAction="#main" text="Back To Main" textFill="#2c2b2b" />
+   </children>
+</AnchorPane>

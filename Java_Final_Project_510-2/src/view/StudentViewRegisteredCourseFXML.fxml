@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.collections.*?>
+<?import fxmltableview.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseViewController">
+	<children>
+		<TableView fx:id="course" layoutX="107.0" layoutY="34.0" prefHeight="310.0" prefWidth="402.0">
+			<columns>
+				<TableColumn prefWidth="203.0" text="Course ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="0.0" prefWidth="198.0" text="Course Name">
+					<cellValueFactory>
+						<PropertyValueFactory property="name" />
+					</cellValueFactory>
+				</TableColumn>
+				</columns>
+		</TableView>
+		<Button layoutX="257.0" layoutY="353.0" mnemonicParsing="false" onAction="#studentloginmain" text="Back To Main" textFill="#e82e24" />
+
+	</children>
+</AnchorPane>

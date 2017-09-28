@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="250.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseController">
+   <children>
+      <Label layoutX="156.0" layoutY="55.0" prefHeight="17.0" prefWidth="84.0" text="Course ID" />
+      <Label layoutX="156.0" layoutY="99.0" prefHeight="17.0" prefWidth="84.0" text="Course Name" />
+      <Label layoutX="156.0" layoutY="142.0" prefHeight="17.0" prefWidth="84.0" text="Course Type" />
+      <TextField fx:id="Course_ID" layoutX="289.0" layoutY="51.0" />
+      <TextField fx:id="Course_Name" layoutX="289.0" layoutY="95.0" />
+      <Label layoutX="238.0" layoutY="14.0" prefHeight="17.0" prefWidth="135.0" text="           Add Student" />
+      <Button layoutX="156.0" layoutY="192.0" mnemonicParsing="false" onAction="#ViewCourse" prefHeight="25.0" prefWidth="59.0" text="View " />
+      <Button layoutX="276.0" layoutY="192.0" mnemonicParsing="false" onAction="#AddCourseToDataBase" prefHeight="25.0" prefWidth="59.0" text="Add" />
+      <Button layoutX="395.0" layoutY="192.0" mnemonicParsing="false" onAction="#main" text="Back To Main" textFill="#2c2b2b" />
+      <RadioButton fx:id="OnlineClass" layoutX="286.0" layoutY="142.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Online_class">
+         <toggleGroup>
+            <ToggleGroup fx:id="Course_type"/>
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="LiveClass" layoutX="418.0" layoutY="142.0" mnemonicParsing="false" selected="true" text="Live_Class" toggleGroup="$Course_type" />
+   </children>
+</AnchorPane>

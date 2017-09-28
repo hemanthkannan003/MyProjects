@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:controller="controller.LoginController" prefHeight="125.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <Label layoutX="20.0" layoutY="31.0" prefHeight="17.0" prefWidth="260.0" text="  The User_Name or password does not match " textFill="#bc2727" />
+      <Button  onAction="#LoginFromError" layoutX="94.0" layoutY="75.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="113.0" text="Back to Login" textFill="#ee1212" />
+   </children>
+</AnchorPane>

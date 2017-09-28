@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.collections.*?>
+<?import fxmltableview.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseViewController">
+	<children>
+		<TableView fx:id="course" layoutX="75.0" layoutY="30.0" prefHeight="216.0" prefWidth="564.0">
+			<columns>
+				<TableColumn prefWidth="189.0" text="Course ID">
+					<cellValueFactory>
+						<PropertyValueFactory property="id" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="0.0" prefWidth="158.0" text="Course Name">
+					<cellValueFactory>
+						<PropertyValueFactory property="name" />
+					</cellValueFactory>
+				</TableColumn>
+				<TableColumn minWidth="0.0" prefWidth="258.0" text="Course Type">
+					<cellValueFactory>
+						<PropertyValueFactory property="type" />
+					</cellValueFactory>
+				</TableColumn>
+				</columns>
+		</TableView>
+		<TextField fx:id="name" layoutX="314.0" layoutY="259.0" />
+       <RadioButton fx:id="OnlineClass" layoutX="314.0" layoutY="309.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Online_class">
+         <toggleGroup>
+            <ToggleGroup fx:id="Course_type" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="LiveClass" layoutX="438.0" layoutY="309.0" mnemonicParsing="false" selected="true" text="Live_Class" toggleGroup="$Course_type" />
+      <Label layoutX="185.0" layoutY="259.0" prefHeight="25.0" prefWidth="101.0" text="Course_Name" />
+      <Label layoutX="185.0" layoutY="305.0" prefHeight="25.0" prefWidth="101.0" text="Course_type" />
+		<Button layoutX="448.0" layoutY="355.0" mnemonicParsing="false" onAction="#updatecoursedatabase" text="Update" textFill="#e82e24" />
+		<Button layoutX="227.0" layoutY="355.0" mnemonicParsing="false" onAction="#main" text="Back To Main" textFill="#e82e24" />
+
+	</children>
+</AnchorPane>

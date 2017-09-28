@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="450.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40">
+   <children>
+      <Button layoutX="159.0" layoutY="54.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Look_up Corse" />
+      <Button layoutX="159.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Add_ Course" />
+      <Button layoutX="159.0" layoutY="150.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Drop_course" />
+      <Button layoutX="159.0" layoutY="197.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="View_registered Course" />
+      <Button layoutX="159.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Logout" />
+      <Label layoutX="123.0" layoutY="25.0" prefHeight="17.0" prefWidth="193.0" text="           Student           Operation" />
+   </children>
+</AnchorPane>
